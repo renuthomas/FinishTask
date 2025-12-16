@@ -58,7 +58,6 @@ export default function useTasks() {
   console.log("Reordering", draggedId, droppedOnId);
     setTasks(prev => {
       const list = [...prev];
-      // FIX: Ensure IDs are treated as numbers for reliable comparison
       const numDraggedId = Number(draggedId);
       const numDroppedOnId = Number(droppedOnId);
       
